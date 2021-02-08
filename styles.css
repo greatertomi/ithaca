@@ -1,0 +1,162 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url(font/ProximaNova-Reg.otf) format('opentype');
+}
+
+body {
+  font-family: ProximaNova;
+  background-color: #f1f5f8;
+}
+
+.mainContent {
+  padding: 20px 35px;
+}
+
+.mainPix {
+  width: 100%;
+}
+
+.displayCard {
+  background-color: white;
+  padding: 40px 50px;
+}
+
+.displayCard div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#cardDivText {
+  font-size: larger;
+}
+
+.ccDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ccDivInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.veryGoodBtn {
+  background-color: #57d8d3;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+ul {
+  line-height: 30px;
+  color: #3b94d2;
+}
+
+.ccImg {
+  height: 180px;
+  width: 280px;
+}
+
+.minorBtn {
+  margin-left: 30px !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.realccDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.applyNowBtn {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #fa6e3d;
+  color: white;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.applyNowBtn:hover {
+  background-color: #9e3611;
+}
+
+.veryGoodBtn:hover {
+  background-color: #0d8d89;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+.link {
+  color: #3486c4;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #1c6399;
+}
+
+.reviewDiv {
+  display: flex;
+}
+
+.fa-star,
+.fa-star-o {
+  color: #57d8d3;
+}
+
+.faStarsDiv {
+  margin-right: 10px;
+}
+
+.fa-times {
+  -webkit-transform: rotate(132deg);
+  -moz-transform: rotate(132deg);
+  -o-transform: rotate(132deg);
+  -ms-transform: rotate(132deg) !important;
+  transform: rotate(132deg) !important;
+  color: #323335;
+}
+
+@media only screen and (max-width: 800px) {
+  .ccDiv {
+    flex-direction: column-reverse;
+  }
+
+  .displayCard div:nth-child(1) {
+    flex-direction: column;
+  }
+
+  #cardDivText {
+    width: 100% !important;
+  }
+
+  .sup {
+    display: none;
+  }
+
+  .realccDiv {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+
+  .faStarsDiv {
+    display: flex;
+    flex-direction: row !important;
+  }
+}
